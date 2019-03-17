@@ -18,5 +18,5 @@ docker run --rm -it --network kafka-net ksolaima/kafka-producer
 # docker build --file Dockerfile_stream_producer -t ksolaima/kafka-producer-stream .
 docker run -d --rm --network kafka-net ksolaima/kafka-producer-stream
 
-docker build -f Dockerfile_LSI -t ksolaima/kafka-consumer .
+docker build -t ksolaima/kafka-consumer .
 docker run --rm -it -p 8000:6000 --network kafka-net ksolaima/kafka-consumer
